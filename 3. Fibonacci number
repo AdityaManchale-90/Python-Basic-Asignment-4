@@ -1,0 +1,19 @@
+# 3. Write a Python Program to Print the Fibonacci sequence?
+
+# This program gives the Fibonacci sequence till the nth number specified by the user..
+
+def fib(xn):
+    n, n1 = 0, 1
+    if xn == 0:
+        print("Enter a non zero positive number.")
+    elif xn == 1:
+        print(n)
+    elif xn == 2:
+        print(n)
+        print(n1)
+    else:
+        while n < xn:
+            print(n)
+            n, n1 = n1, n+n1
+
+fib(50)
