@@ -1,0 +1,25 @@
+# 5. Write a Python Program to Find Armstrong Number in an Interval??
+
+# This program will gives the armstrong numbers in the given range of numbers.
+
+def armstrnums():
+    a1 = int(input("Enter the Starting range: "))
+    a2 = int(input("Enter the Ending range: "))
+    for num in range(a1, a2+1):
+        b = len(str(num))
+
+        # initialize sum
+        c = 0
+
+        # find the sum of power of each digit
+        temp = num
+        while temp > 0:
+            d = temp % 10
+            c = c + d**b
+            temp = temp//10
+
+        # display the result
+        if num == c:
+            print(num)
+
+armstrnums()
